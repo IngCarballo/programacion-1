@@ -29,6 +29,67 @@ Antes de empezar, deberias tener completo el TP1 y ademas:
 - un usuario con permisos para crear bases de datos,
 - una base de datos creada para el proyecto, por ejemplo `programacion1_db`.
 
+## Instalacion de PostgreSQL
+
+Si todavia no tenes PostgreSQL instalado, podes hacerlo antes de continuar con este TP.
+
+Documentacion oficial:
+
+- PostgreSQL Downloads: `https://www.postgresql.org/download/`
+- Documentacion oficial de PostgreSQL: `https://www.postgresql.org/docs/`
+
+Segun tu sistema operativo:
+
+- macOS: se puede instalar con `Homebrew`.
+- Windows: se recomienda usar el instalador oficial de PostgreSQL.
+- Linux: se puede instalar desde el gestor de paquetes de la distribucion.
+
+Ejemplo en macOS con Homebrew:
+
+```bash
+brew install postgresql
+brew services start postgresql
+```
+
+Despues de instalarlo, verificar que el servicio este corriendo y que el cliente `psql` este disponible:
+
+```bash
+psql --version
+```
+
+Si preferis no detallar toda la instalacion en el TP, como minimo debe quedar referenciada la documentacion oficial para que cada estudiante pueda seguir la guia correcta segun su sistema operativo.
+
+## Conexion con DBeaver
+
+Si, es totalmente posible conectar PostgreSQL con DBeaver, y de hecho es una muy buena idea para visualizar tablas, relaciones y datos sin depender solo de la terminal.
+
+Documentacion oficial:
+
+- DBeaver: `https://dbeaver.io/`
+- Documentacion de conexiones PostgreSQL en DBeaver: `https://dbeaver.com/docs/dbeaver/Database-driver-PostgreSQL/`
+
+Pasos generales para conectar la base del proyecto en DBeaver:
+
+1. Abrir DBeaver.
+2. Crear una nueva conexion.
+3. Elegir `PostgreSQL` como motor.
+4. Completar los datos de conexion:
+   - Host: `localhost`
+   - Port: `5432`
+   - Database: `programacion1_db`
+   - Username: el usuario configurado en PostgreSQL
+   - Password: la contrasena correspondiente
+5. Probar la conexion.
+6. Guardar.
+
+Una vez conectada la base, DBeaver permite:
+
+- ver tablas y columnas,
+- ejecutar consultas SQL,
+- inspeccionar relaciones,
+- revisar los datos cargados por Django,
+- y comprobar rapidamente si las migraciones se aplicaron bien.
+
 ## Entregables
 
 Al finalizar este TP se espera tener:
@@ -58,6 +119,8 @@ pip freeze > requirements.txt
 ## Paso 2: Crear la base de datos en PostgreSQL
 
 Si todavia no existe, crear una base de datos para el proyecto. Esto se puede hacer desde `psql`, pgAdmin o la herramienta que estes usando para administrar PostgreSQL.
+
+Tambien puede hacerse desde DBeaver si ya tenes una conexion creada al servidor PostgreSQL.
 
 Por ejemplo, desde consola:
 
