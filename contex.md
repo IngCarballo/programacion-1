@@ -4,6 +4,29 @@ Este repositorio contiene una serie de 10 trabajos practicos para desarrollar un
 
 La idea general del recorrido es construir una aplicacion web de forma progresiva, entendiendo que cada TP agrega una capa nueva sobre el trabajo anterior.
 
+## Estructura del repositorio
+
+Todo el proyecto se trabaja en un unico repositorio.
+
+Esto implica que:
+
+- el backend y el frontend viven dentro del mismo repositorio,
+- la documentacion tambien queda versionada en el mismo lugar,
+- y cada TP continua sobre el trabajo ya realizado, sin crear repositorios nuevos para cada parte del sistema.
+
+La estructura esperada es de tipo monorepo. Por ejemplo:
+
+```text
+proyecto/
+  config/
+  core/
+  frontend/
+  docs/
+  tp0.md
+  tp1.md
+  ...
+```
+
 ## Objetivo general
 
 Construir una aplicacion full stack con las siguientes etapas:
