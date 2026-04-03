@@ -10,7 +10,7 @@ Desarrollar las **vistas estáticas del proyecto frontend** utilizando el framew
 
 - Vistas estáticas creadas con Bootstrap  
 - Diseño responsive adaptado a móviles, tablets y PC  
-- Repositorio con ramas organizadas y commits claros
+- Mismo repositorio del proyecto con ramas organizadas y commits claros
 
 ---
 

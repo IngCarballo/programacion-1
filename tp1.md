@@ -54,6 +54,8 @@ Al finalizar este trabajo practico se espera tener:
 
 Crear un nuevo repositorio en GitHub con el nombre del proyecto que se va a utilizar durante la cursada.
 
+Este sera el unico repositorio del proyecto completo. En el mismo repositorio se ira construyendo primero el backend y mas adelante tambien el frontend.
+
 Luego clonarlo en la maquina local:
 
 ```bash
@@ -62,6 +64,8 @@ cd <NOMBRE_DEL_REPOSITORIO>
 ```
 
 Este paso sirve para empezar a versionar el proyecto desde el inicio y mantener un historial ordenado de cambios.
+
+Mas adelante, cuando se cree React, no se abrira un repositorio nuevo: el frontend se agregara dentro de este mismo proyecto, normalmente en una carpeta llamada `frontend/`.
 
 ## Paso 2: Crear y activar un entorno virtual
 

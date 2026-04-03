@@ -12,7 +12,7 @@ Conectar el frontend realizado en React con el backend existente, de modo que to
 - Consumo de endpoints reales para login, logout, registro y vistas protegidas  
 - Manejo de sesión con almacenamiento seguro del token o cookie  
 - Protección de rutas y validación de autenticación en el frontend  
-- Código organizado y funcional en un repositorio
+- Código organizado y funcional dentro del mismo repositorio del proyecto
 
 ---
 
